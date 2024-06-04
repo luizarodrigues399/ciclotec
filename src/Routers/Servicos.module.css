@@ -1,0 +1,51 @@
+.consultoria{
+    display: flex;
+    text-align: left;
+    line-height: 50px;
+    background-image: url('../assets/consultoria.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.consultoria_content{
+    padding: 2rem 5rem;
+}
+
+.consultoria_content ul{
+    padding: 10px;
+}
+
+.consultoria_content li{
+    padding: 20px 0;
+}
+
+@media all and (max-width: 1200px) {
+    .consultoria_content{
+        background-color: #ffffffc9;
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    .consultoria_content{
+        padding: 2rem;
+    }
+
+}
+
+
+@media all and (max-width: 576px) {
+    .consultoria h1{
+        text-align: center;
+    }
+
+    .consultoria{
+        background-size: cover;
+    }
+
+    .consultoria_content{
+        padding: 0;
+    }
+
+}

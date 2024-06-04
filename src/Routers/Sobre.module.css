@@ -1,0 +1,74 @@
+.sobre p{
+    margin: 1em 5em;
+    line-height: 50px;
+}
+
+.nossa_historia{
+    background-image: url("../assets/nossaHistoria.png");
+    background-position: center;
+    background-size: cover;
+    padding: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.nossa_historia_content {
+    margin: 0 3em;
+    border: solid white;
+    border-radius: 15px;
+    opacity: 0.9;
+    background-color: var(--blue);
+    text-align: justify;
+    padding: 2rem;
+    line-height: 50px;
+}
+
+.ceo_content{
+    display: flex;
+    align-items: center;
+    margin: 0 7em;
+    text-align: left;
+    line-height: 50px;
+    gap: 1em;
+}
+
+.ceo img{
+    max-width: 300px;
+}
+
+.arrow{
+    width: 60%;
+    margin: 3rem auto;
+}
+
+.arrow::before{
+    right: 100%;
+}
+
+
+@media all and (max-width: 992px) {
+    .ceo_content{
+        margin: 0 4em;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .sobre p{
+        margin: 1em;
+    }
+
+    .nossa_historia{
+        padding: 1rem;
+    }
+
+    .nossa_historia_content {
+        margin: 0;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .ceo_content{
+        margin: 0 1.2em;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,50 @@
+.mainBanner{
+    width: 70%;
+    height: 300px;
+}
+
+.logo{
+    width:30%;
+}
+
+.home_section{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px var(--blueTransparent);
+}
+
+.portfolio img{
+    height: 70%;
+}
+
+.nosso_metodo_content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nosso_metodo_text{
+    margin: 0 50px;
+    line-height: 2rem;
+}
+
+.nosso_metodo_line{
+ border: solid var(--orange) 1px;
+ box-shadow: 0 20px 20px -20px #333;
+ width: 100px;
+}
+
+.nosso_metodo_paragraph{
+    max-width: 500px;
+}
+
+@media all and (max-width: 768px) {
+    .nosso_metodo_content{
+        flex-direction: column;
+    }
+
+    .portfolio img, .nosso_metodo img{
+        width: 80%;
+        max-width: 450px;
+    }
+}

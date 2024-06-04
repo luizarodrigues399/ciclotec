@@ -1,0 +1,32 @@
+.arrow {
+    position:relative;
+    width:200px;
+    margin:30px auto;
+    height:0;
+    border-bottom:2px solid var(--orange);
+  }
+  
+.arrow::after { 
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid var(--orange);
+    position: absolute;
+    right: -10px;
+    top: -4px;
+}
+  
+.arrow::before { 
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 10px solid var(--orange);
+    position: absolute;
+    right: 200px;
+    top: -4px;
+  }
+  
