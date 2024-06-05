@@ -49,8 +49,7 @@ const GaleriaFotos = () =>{
             <div className={`${styleArrow.arrow} ${style.arrow}`}></div>
 
             <h2>Inspeção em Obras de Arte Município São José da Lapa</h2>
-
-            Inspeção em Obras de Arte Município São José da Lapa
+            
             <div className={style.galeria_fotos_img}>            
                 <img src={SaoJoseDaLapa} alt='fotos do projeto em São Jose da Lapa'/> 
             </div>

@@ -4,7 +4,7 @@ import style from './Header.module.css'
 import { FaBars, FaSquareXmark } from "react-icons/fa6";
 import { IconContext } from "react-icons";
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState } from 'react';
 
 const Header = () => {
 
@@ -14,10 +14,20 @@ const Header = () => {
         setSidebar(!sidebar)   
     }
 
+    const hideSidebar = () =>{
+        setSidebar(false); 
+        window.scrollTo(0, 0);
+    }
+
+    const screenSize = window.matchMedia("(min-width: 768px)").matches;
+
+    const visibility = screenSize ? style.visibility_visible : 
+                                (sidebar ?  style.visibility_visible : style.visibility_hidden);
+
+ 
     return (
     <>
-        <header className={`${style.header} ${style.sidebar} 
-            ${sidebar ? style.visibility_hidden : style.visibility_visible }`}>
+        <header className={`${style.header} ${style.sidebar} ${visibility}`}>
             
             <IconContext.Provider value={{ className : style.header_mobile_close }}>
                 <FaSquareXmark onClick={showSidebar}/>
@@ -29,15 +39,15 @@ const Header = () => {
 
             <nav className={style.navbar}>
                 <ul className={style.navbar_ul}>
-                    <li><Link to='/'>Home</Link></li>
+                    <li><Link onClick={hideSidebar} to='/'>Home</Link></li>
                         
-                    <li><Link to='/sobre'>Sobre</Link></li>
+                    <li><Link onClick={hideSidebar} to='/sobre'>Sobre</Link></li>
 
-                    <li><Link to='/servicos'>Servicos</Link></li>
+                    <li><Link onClick={hideSidebar} to='/servicos'>Servicos</Link></li>
 
-                    <li><Link to='/portfolio'>Portfolio</Link></li>
+                    <li><Link onClick={hideSidebar} to='/portfolio'>Portfolio</Link></li>
 
-                    <li><Link to='/galeriaFotos'>Galeria de Fotos</Link></li>
+                    <li><Link onClick={hideSidebar} to='/galeriaFotos'>Galeria de Fotos</Link></li>
                 </ul>
             </nav>
         </header>
