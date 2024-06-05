@@ -1,0 +1,94 @@
+.servicos_executados{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.servicos_executados img{
+    width: 25%;
+}
+
+.setor_privado{
+    background-image: url('../assets/setorPrivado.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    color: white;    
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+}
+
+.setor_privado_content{
+    width: 60%;
+    text-align: left;
+    background-color: #000000c7;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 15px;
+}
+
+.setor_privado_content h1, 
+.setor_privado_content h2, 
+.setor_publico h1, 
+.setor_publico h2{
+    text-align: center;
+}
+
+.setor_publico li{
+    list-style-image: url("../assets/bonequinho.png");
+    padding: 10px 5px;
+}
+
+.setor_publico {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.setor_publico_content{
+    width: 70%;
+    line-height: 50px;
+}
+
+.setor_publico_content p{
+    font-weight: bold;
+}
+
+.setor_publico_content_img{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.setor_publico_content_img img{
+    width: 30%;
+}
+
+@media all and (max-width: 768px) {
+    .servicos_executados{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .servicos_executados img{
+        width: 30%;
+        min-width: 200px;
+    }
+
+    .setor_privado_content{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .setor_publico_content{
+        width: 80%;
+    }
+
+    .setor_publico_content_img img{
+        display: none;
+    }
+}

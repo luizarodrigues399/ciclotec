@@ -1,0 +1,41 @@
+.arrow{
+    width: 60%;
+    margin-bottom: 3rem;
+}
+
+.arrow::before{
+    right: 100%;
+}
+
+.galeria_fotos{
+    padding: 2rem;
+}
+
+.galeria_fotos_img{
+    margin: 2rem;
+}
+
+.galeria_fotos_img img{
+    width: 50%;
+    min-width: 300px;
+}
+
+.galeria_fotos p {
+    width: 50%;
+    margin: auto;
+}
+
+.galeria_fotos_industria img{
+    width: 25%;
+    min-width: 200px;
+}
+
+@media all and (max-width: 576px) {
+    .galeria_fotos{
+        padding: 0;
+    }
+
+    .galeria_fotos_img{
+        margin: 1rem;
+    }
+}

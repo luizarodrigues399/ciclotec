@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+    font-weight: 600;
 }
 
 .consultoria_content{
@@ -16,9 +17,48 @@
     padding: 10px;
 }
 
-.consultoria_content li{
+.consultoria_content li, .projetos li, .engenharia li{
     padding: 20px 0;
 }
+
+.projetos{
+    background-image: url('../assets/projetos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 600;
+}
+
+
+.projetos_content{
+    background-color: #ffffff96;
+    padding: 1rem;
+    width: 50%;
+    text-align: left;
+    line-height: 50px;
+}
+
+.projetos_content h1, .engenharia h1{
+    text-align: center;
+}
+
+.engenharia{
+    background-image: url('../assets/engenharia.png');
+    background-color: var(--blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: white;
+    line-height: 50px;
+    padding: 2rem;
+}
+
+.engenharia_content{
+    margin: auto;
+    width: 70%;
+}
+
 
 @media all and (max-width: 1200px) {
     .consultoria_content{
@@ -31,11 +71,18 @@
     .consultoria_content{
         padding: 2rem;
     }
-
 }
 
 
 @media all and (max-width: 576px) {
+    .projetos_content{
+        width: 100%;
+    }
+
+    .consultoria ul{
+        padding: revert;
+    }
+
     .consultoria h1{
         text-align: center;
     }
@@ -46,6 +93,14 @@
 
     .consultoria_content{
         padding: 0;
+    }
+
+    .engenharia{
+        padding: 1rem;
+    }
+
+    .engenharia_content{
+        width: 100%;
     }
 
 }
