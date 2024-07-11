@@ -28,9 +28,13 @@
 .galeria_fotos_industria img{
     width: 25%;
     min-width: 200px;
+    margin-top: 1rem;
 }
 
 @media all and (max-width: 576px) {
+    h2{
+        margin: 0 0.5rem;
+    }
     .galeria_fotos{
         padding: 0;
     }

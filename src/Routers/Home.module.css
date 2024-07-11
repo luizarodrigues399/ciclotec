@@ -39,6 +39,10 @@
 }
 
 @media all and (max-width: 768px) {
+    .logo{
+        
+    }
+
     .nosso_metodo_content{
         flex-direction: column;
     }

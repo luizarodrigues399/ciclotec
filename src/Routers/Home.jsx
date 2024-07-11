@@ -12,11 +12,6 @@ const Home = () =>{
                 <img src={Logo} alt='banner' className={style.logo}/>
 
                 <img src={MainBanner} alt='banner principal' className={style.mainBanner}/>
-
-                {/*<div style={{position: 'absolute'}}> 
-                    <h1>O CICLO É TECNICO.<br/> O CICLO É ESTRATEGICO E CICLO É COMERCIAL</h1>
-                </div>*/}
-
             </section>
 
             <section className={`container ${style.portfolio}`}>
