@@ -1,5 +1,5 @@
-import Logo from '../assets/logo.png'
-import LogoMobile from '../assets/logoMobile.png'
+import Logo from '../assets/novaLogo.png'
+import LogoMobile from '../assets/novaLogo.png'
 import style from './Header.module.css'
 import { FaBars, FaSquareXmark } from "react-icons/fa6";
 import { IconContext } from "react-icons";

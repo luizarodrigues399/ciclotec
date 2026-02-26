@@ -1,6 +1,6 @@
 import style from './Footer.module.css'
 import styleModal from './Modal.module.css'
-import Logo from '../assets/logo.png'
+import Logo from '../assets/novaLogo.png'
 import { FaFacebook, FaInstagram, FaWhatsapp, FaEnvelope, FaCircle, FaPhone } from "react-icons/fa6";
 import { useState } from 'react';
 import Modal from 'react-modal'

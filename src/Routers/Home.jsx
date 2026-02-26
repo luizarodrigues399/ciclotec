@@ -1,4 +1,4 @@
-import Logo from '../assets/logo.png'
+import Logo from '../assets/novaLogo.png'
 import MainBanner from '../assets/bannerPrincipal2.png'
 import NossoMetodo from '../assets/nossoMetodo.png'
 import Portfolio from '../assets/portfolio.png'
