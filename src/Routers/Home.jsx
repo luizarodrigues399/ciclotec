@@ -4,6 +4,7 @@ import NossoMetodo from '../assets/nossoMetodo.png'
 import Portfolio from '../assets/portfolio.png'
 import style from './Home.module.css'
 import styleArrow from '../Components/Arrow.module.css'
+import SimpleSlider from '../Components/SimpleSlider'
 
 const Home = () =>{
     return (
@@ -16,6 +17,10 @@ const Home = () =>{
 
             <section className={`container ${style.portfolio}`}>
                 <img src={Portfolio} alt='portfolio'/>
+            </section>
+
+             <section className={`container`}>
+                <SimpleSlider/>
             </section>
 
 
