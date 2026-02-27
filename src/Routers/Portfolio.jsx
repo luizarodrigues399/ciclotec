@@ -95,7 +95,6 @@ const Portfolio = () =>{
                     <p>Participação em conselho e entidade de classe:</p>
 
                     <ul>
-                        <li> ASEP - ASSOCIAÇÃO DOS ENGENHEIROS DE PEDRO LEOPOLDO (DIRETORIA - VOGAL)</li>
                         <li> INSPETOR CHEFE DOS MUNICIPIOS: Lagoa Santa, Vespasiano, São José da Lapa, Confins, 
                             Pedro Leopoldo, Matozinhos e Capim Branco</li>
                     </ul>    

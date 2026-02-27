@@ -1,5 +1,5 @@
 import Logo from '../assets/novaLogo.png'
-import MainBanner from '../assets/bannerPrincipal2.png'
+import MainBanner from '../assets/bannerPrincipal3.png'
 import NossoMetodo from '../assets/nossoMetodo.png'
 import Portfolio from '../assets/portfolio.png'
 import style from './Home.module.css'

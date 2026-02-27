@@ -42,8 +42,7 @@ const Serviços = () =>{
                 <div className={style.engenharia_content}>
                     <h1>ENGENHARIA</h1>
                     <ul>
-                        
-                        <li>Obras de acabamento da construção;</li>
+                        <li>Construção de edifícios;</li> 
                         <li>Administração de obras;</li>
                         <li>Construção de redes de abastecimento de água, coleta de esgoto e construções correlatas;</li>
                         <li>Instalações de sistema de prevenção contra incêndio;</li>
@@ -51,7 +50,7 @@ const Serviços = () =>{
                         <li>Seleção e agenciamento de mão-de-obra Atividades de sonorização e de iluminação Serviços de
                         organização de feiras, congressos exposições e festas;
                         </li>
-                        <li>Resentantes comerciais e agentes do comércio de madeira, material de construção e ferragens.</li>
+                        <li>Representantes comerciais e agentes do comércio de madeira, material de construção e ferragens.</li>
                     </ul> 
                 </div>   
             </section>
