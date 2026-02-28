@@ -29,6 +29,10 @@ function SimpleSlider() {
     speed: 500
   };
 
+  const imgStyle={
+    height: "500px"
+  };
+
   const screenSize = window.matchMedia("(max-width: 500px)").matches;
   
   const settings = screenSize ? mobile : desktop;
@@ -43,17 +47,17 @@ function SimpleSlider() {
 
       <div className={`container`}>
           <Slider {...settings}>
-            <div className="card px-1 border-white">
-                  <img src={Carrossel1} alt='imagem carrossel 1' className="w-100" style={{ height: "500px", objectFit: "cover" }}/>
+            <div className="card px-md-1 border-white">
+                  <img src={Carrossel1} alt='imagem carrossel 1' className="w-100" style={imgStyle}/>
               </div>
-              <div className="card px-1 border-white">
-                  <img src={Carrossel2} alt='imagem carrossel 2' className="w-100" style={{ height: "500px", objectFit: "cover" }}/>
+              <div className="card px-md-1 border-white">
+                  <img src={Carrossel2} alt='imagem carrossel 2' className="w-100" style={imgStyle}/>
               </div>
-              <div className="card px-1 border-white">
-                  <img src={Carrossel3} alt='imagem carrossel 3' className="w-100" style={{ height: "500px", objectFit: "cover" }}/>
+              <div className="card px-md-1 border-white">
+                  <img src={Carrossel3} alt='imagem carrossel 3' className="w-100" style={imgStyle}/>
               </div>
-              <div className="card px-1 border-white">
-                  <img src={Carrossel4} alt='imagem carrossel 4' className="w-100" style={{ height: "500px", objectFit: "cover" }}/>
+              <div className="card px-md-1 border-white">
+                  <img src={Carrossel4} alt='imagem carrossel 4' className="w-100" style={imgStyle}/>
               </div>
           </Slider>
       </div>
