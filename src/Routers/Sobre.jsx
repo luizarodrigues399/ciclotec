@@ -45,7 +45,7 @@ const Sobre = () =>{
         </section>
 
         <section className={ `container ${style.ceo}`}>
-            <h1>ROGER WILLIAM ROSA</h1>
+            <h1>ROGER WILLIAN ROSA</h1>
 
             <div className={style.ceo_content}>
                 <div>

@@ -12,7 +12,7 @@ const Home = () =>{
             <section className={style.home_section}>
                 <img src={Logo} alt='banner' className={style.logo}/>
 
-                <img src={MainBanner} alt='banner principal' className={style.mainBanner}/>
+                {/*<img src={MainBanner} alt='banner principal' className={style.mainBanner}/>*/}
             </section>
 
             <section className={`container ${style.portfolio}`}>

@@ -10,7 +10,8 @@
 .home_section{
     display: flex;
     align-items: center;
-    border-bottom: solid 1px var(--blueTransparent);
+    justify-content: center;
+    /*border-bottom: solid 1px var(--blueTransparent);*/
 }
 
 .portfolio img{
@@ -39,6 +40,10 @@
 }
 
 @media all and (max-width: 768px) {
+    .home_section{
+        padding-top: 20px;
+    }
+
     .logo{
         transform: translateX(10px);
     }

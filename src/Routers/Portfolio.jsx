@@ -95,7 +95,7 @@ const Portfolio = () =>{
                     <p>Participação em conselho e entidade de classe:</p>
 
                     <ul>
-                        <li> INSPETOR CHEFE DOS MUNICIPIOS: Lagoa Santa, Vespasiano, São José da Lapa, Confins, 
+                        <li> INSPETOR CHEFE DO CREA-MG NOS MUNICIPIOS: Lagoa Santa, Vespasiano, São José da Lapa, Confins, 
                             Pedro Leopoldo, Matozinhos e Capim Branco</li>
                     </ul>    
             </div>   
