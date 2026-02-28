@@ -11,25 +11,27 @@ import Carrossel3 from '../assets/carrossel3.jpeg'
 import Carrossel4 from '../assets/carrossel4.jpeg'
 
 function SimpleSlider() {
-  const settings = {
+
+  const mobile = {
     dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    speed: 500
+  };
+
+  const desktop = {
+    dots: true,
+    infinite: true,
     className: "center",
     centerMode: true,
-    infinite: true,
     centerPadding: "60px",
     slidesToShow: 3,
-    speed: 500,
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+    speed: 500
   };
+
+  const screenSize = window.matchMedia("(max-width: 500px)").matches;
   
+  const settings = screenSize ? mobile : desktop;
   
   {/*O root.div serve para isolar o boostrap do site, pois o site inteiro está sem boostrap e quando coloca ele, o site
     quebra inteiro. Então ele somente será usado para o simpleSlider*/}
@@ -42,16 +44,16 @@ function SimpleSlider() {
       <div className={`container`}>
           <Slider {...settings}>
             <div className="card px-1 border-white">
-                  <img src={Carrossel1} alt='imagem carrossel 1' className="w-100" />
+                  <img src={Carrossel1} alt='imagem carrossel 1' className="w-100" style={{ height: "500px", objectFit: "cover" }}/>
               </div>
               <div className="card px-1 border-white">
-                  <img src={Carrossel2} alt='imagem carrossel 2' className="w-100"/>
+                  <img src={Carrossel2} alt='imagem carrossel 2' className="w-100" style={{ height: "500px", objectFit: "cover" }}/>
               </div>
               <div className="card px-1 border-white">
-                  <img src={Carrossel3} alt='imagem carrossel 3' className="w-100"/>
+                  <img src={Carrossel3} alt='imagem carrossel 3' className="w-100" style={{ height: "500px", objectFit: "cover" }}/>
               </div>
               <div className="card px-1 border-white">
-                  <img src={Carrossel4} alt='imagem carrossel 4' className="w-100"/>
+                  <img src={Carrossel4} alt='imagem carrossel 4' className="w-100" style={{ height: "500px", objectFit: "cover" }}/>
               </div>
           </Slider>
       </div>
