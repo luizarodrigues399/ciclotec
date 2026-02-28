@@ -51,6 +51,7 @@
 @media all and (max-width: 768px) {
     .footer{
         flex-direction: column-reverse;
+        background-image: none !important;
     }
 
     .linha, .phone_contact_group{
