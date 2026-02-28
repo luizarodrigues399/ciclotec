@@ -19,10 +19,11 @@ const Home = () =>{
                 <img src={Portfolio} alt='portfolio'/>
             </section>
 
-             <section className={`container`}>
+            {/*O simplsSlider tem que ser encapsulado com algo (div, section, etc) por causa do root.div. Se não encapsular,
+            o root.div sera append no root do site inteiro e não vai funcionar como deve*/}
+            <section> 
                 <SimpleSlider/>
             </section>
-
 
             <section className={`container ${style.nosso_metodo}`}>
                 <h1>NOSSO MÉTODO</h1>
