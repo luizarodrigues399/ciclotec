@@ -19,7 +19,7 @@ const Home = () =>{
                 <img src={Portfolio} alt='portfolio'/>
             </section>
 
-            {/*O simplsSlider tem que ser encapsulado com algo (div, section, etc) por causa do root.div. Se não encapsular,
+            {/*O simpleSlider tem que ser encapsulado com algo (div, section, etc) por causa do root.div. Se não encapsular,
             o root.div sera append no root do site inteiro e não vai funcionar como deve*/}
             <section> 
                 <SimpleSlider/>
